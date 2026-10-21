@@ -8,9 +8,9 @@
   "main": "app/background.js",
   "executableName": "alianhubtimetracker",
   "scripts": {
-    "dev": "nextron",
-    "build": "nextron build",
-    "build:linux": "nextron build --linux",
+    "dev": "node init && nextron",
+    "build": "node init && nextron build",
+    "build:linux": "node init && nextron build --linux",
     "postinstall": "electron-builder install-app-deps && bash postinstall.sh"
   },
   "build": {

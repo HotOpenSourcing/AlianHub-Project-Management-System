@@ -1,7 +1,7 @@
 {
   "name": "alian-hub-v3",
-  "version": "14.40.1",
-  "description": "AlianHub — the open-source, self-hosted project management system. Multi-tenant, real-time, customizable. An open-source alternative to Jira, Asana, Monday, Linear, and ClickUp.",
+  "version": "14.40.2",
+  "description": "AlianHub \u2014 the open-source, self-hosted project management system. Multi-tenant, real-time, customizable. An open-source alternative to Jira, Asana, Monday, Linear, and ClickUp.",
   "keywords": [
     "project-management",
     "task-management",
@@ -114,10 +114,10 @@
     "e2e:db:stop": "docker stop alianhub-e2e-mongo",
     "test:watch": "jest --selectProjects unit conventions --watch",
     "lint": "eslint .",
-    "start": "node server.js",
+    "start": "node init && node server.js",
     "nodemon": "nodemon index.js",
     "setup": "node scripts/dev.js",
-    "dev": "node scripts/dev.js --skip-install",
+    "dev": "node init && node scripts/dev.js --skip-install",
     "setup:reset": "node scripts/dev.js --force",
     "migrate": "node scripts/migrate.js up",
     "migrate:status": "node scripts/migrate.js status",

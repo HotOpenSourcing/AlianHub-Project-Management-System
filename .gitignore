@@ -7,7 +7,6 @@ jspm_packages
 /frontend/dist
 
 # local env files
-.env.local
 .env.*.local
 
 # Log files
@@ -119,15 +118,12 @@ typings/
 
 # Editor directories and files
 .idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-.env
-.env.test
 frontend/config/.env.production
 frontend/config/firebase-messaging-sw.js.production
 frontend/config/temp
@@ -160,3 +156,4 @@ package-lock.json
 
 # Screenshot atlases written by npm run atlas and npm run atlas:compare
 /artifacts/atlas/
+config.bat

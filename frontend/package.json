@@ -6,10 +6,10 @@
   "author": "Alian Software <https://alianhub.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "node init && vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test": "vitest run",
-    "build-report": "vue-cli-service build --report"
+    "build-report": "node init && vue-cli-service build --report"
   },
   "dependencies": {
     "@chargebee/chargebee-js-vue-wrapper": "0.3.2",
